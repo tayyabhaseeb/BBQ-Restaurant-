@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+header {
+  min-height: 350px;
+  background: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2021/07/2-10-1024x640.jpg");
+
+  background-position: center;
+  position: relative;
+
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+header::before {
+  content: "";
+  background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2021/07/2-10-1024x640.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+h1 {
+  position: relative;
+  color: whitesmoke;
+  line-height: 0.9;
+  font-weight: 200;
+  text-align: center;
+}
+
+.bold {
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+}
+
+.top-text {
+  color: orange;
+  position: relative;
+  font-size: 1rem;
+  order: -1;
+  border-top: 5px solid;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+h2,
+h4 {
+  text-transform: uppercase;
+  color: orange;
+  position: relative;
+  font-size: 1rem;
+}
+
+section {
+  /* background-color: pink; */
+  padding-top: 2rem;
+  text-align: center;
+}
+
+p {
+  /* margin-top: 1rem; */
+  max-width: 400px;
+  display: block;
+  margin: 1rem auto;
+}
+
+input {
+  border: solid 2px lightslategrey;
+}
+
+input,
+button {
+  display: block;
+  margin: 5px auto;
+  width: 60%;
+  padding: 0.35rem;
+
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 500px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    width: 50%;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 50%;
+  }
+}
